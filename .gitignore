@@ -1,0 +1,15 @@
+.DS_Store
+.devcontainer/devcontainer.json
+
+Thirdparty/g2o/lib/
+Thirdparty/g2o/bin/
+Thirdparty/OpenCV/
+Thirdparty/Pangolin/
+
+build/
+
+Apps/mono_euroc
+Apps/mono_tumrgbd
+Apps/mono_tumvi
+
+trajectory.txt

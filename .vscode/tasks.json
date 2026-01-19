@@ -1,0 +1,16 @@
+{
+    "version": "2.0.0", 
+    "presentation": { "echo": false },
+    "tasks": [
+        {
+            "label": "Configure devcontainer.json",
+            "type": "shell",
+            "command": "[ -e .devcontainer/devcontainer.json ] || cp .devcontainer/devcontainer.$(uname -s | tr '[:upper:]' '[:lower:]').json .devcontainer/devcontainer.json",
+            "linux": {"command": "[ -e .devcontainer/devcontainer.json ] || cp .devcontainer/devcontainer.$(uname -s | tr '[:upper:]' '[:lower:]').json .devcontainer/devcontainer.json"},
+            "windows": {"command": "cp .devcontainer\\devcontainer.windows.json .devcontainer\\devcontainer.json "},
+            "runOptions": { 
+                "runOn": "folderOpen"
+            }
+        }
+    ]   
+}

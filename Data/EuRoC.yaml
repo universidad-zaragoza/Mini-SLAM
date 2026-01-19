@@ -1,0 +1,45 @@
+%YAML:1.0
+
+# Camera calibration and distortion parameters
+Camera.fx: 458.654
+Camera.fy: 457.296
+Camera.cx: 367.215
+Camera.cy: 248.375
+
+Camera.k1: -0.28340811
+Camera.k2: 0.07395907
+Camera.p1: 0.00019359
+Camera.p2: 1.76187114e-05
+
+# Camera resolution
+Camera.cols: 752
+Camera.rows: 480
+
+# Number of features per image
+FeatureExtractor.nFeatures: 1000
+
+# Number of levels in the scale pyramid
+FeatureExtractor.nScales: 8
+
+# Scale factor between levels in the scale pyramid
+FeatureExtractor.fScaleFactor: 1.2
+
+# Feature grid dimensions
+FeatureGrid.nGridCols: 64
+FeatureGrid.nGridRows: 48
+
+#Essential Matrix threshold
+Epipolar.th: 0.002
+
+#Feature matching thresholds
+Matching.initialization: 50
+Matching.guidedMatching: 50
+Matching.searchByProjection: 100
+Matching.searchForTriangulation: 50
+Matching.fuse: 50
+
+#Covisivility graph
+Map.minObs: 15
+
+#Min cos parallax to triangulate
+Triangulation.minCos: 0.9998

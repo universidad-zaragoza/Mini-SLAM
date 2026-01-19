@@ -1,0 +1,26 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug mono_tumrgbd (Lab #3)",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/Apps/mono_tumrgbd",
+            "args": ["./Datasets/rgbd_dataset_freiburg1_xyz"],
+            "cwd": "${workspaceFolder}",
+            "MIMode": "gdb",
+        },
+        {
+            "name": "Debug mono_euroc (Lab #4)",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/Apps/mono_euroc",
+            "args": ["./Datasets/V1_02_medium", "./Apps/EuRoC_TimeStamps/V102.txt"],
+            "cwd": "${workspaceFolder}",
+            "MIMode": "gdb",
+        },
+    ]
+}

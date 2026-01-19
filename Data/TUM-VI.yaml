@@ -1,0 +1,46 @@
+%YAML:1.0
+
+# Camera calibration and distortion parameters (OpenCV) 
+Camera.fx: 190.978477
+Camera.fy: 190.973307
+Camera.cx: 254.931706
+Camera.cy: 256.897442
+
+# Equidistant distortion 0.0034823894022493434, 0.0007150348452162257, -0.0020532361418706202, 0.00020293673591811182
+Camera.k0: 0.003482389402
+Camera.k1: 0.000715034845
+Camera.k2: -0.002053236141
+Camera.k3: 0.000202936736
+    
+# Camera resolution
+Camera.cols: 512
+Camera.rows: 512
+
+# Number of features per image
+FeatureExtractor.nFeatures: 1000
+
+# Number of levels in the scale pyramid
+FeatureExtractor.nScales: 8
+
+# Scale factor between levels in the scale pyramid
+FeatureExtractor.fScaleFactor: 1.2
+
+# Feature grid dimensions
+FeatureGrid.nGridCols: 64
+FeatureGrid.nGridRows: 48
+
+#Essential Matrix threshold
+Epipolar.th: 0.004
+
+#Feature matching thresholds
+Matching.initialization: 50
+Matching.guidedMatching: 50
+Matching.searchByProjection: 100
+Matching.searchForTriangulation: 50
+Matching.fuse: 50
+
+#Covisivility graph
+Map.minObs: 70
+
+#Min cos parallax to triangulate
+Triangulation.minCos: 0.9998
