@@ -75,7 +75,7 @@ Click **Reopen in Container**. The first time you do this, it may take up to an 
 
 From now on, every time you open your Mini-SLAM folder in VS Code, you can immediately choose **Reopen in Container** from the pop-up or via the connect menu in the bottom-left corner: ![Open a Remote Window](Misc/vscode-open-remote-window.png)
 
-You can follow the steps provided in the SLAM course hand-off for each lab and run everything from the terminal. However, this section explains how to make full use of VS Code’s debugging capabilities for your applications (highly recommended).
+You can follow the steps provided in the SLAM course handout for each lab and run everything from the terminal. However, this section explains how to make full use of VS Code’s debugging capabilities for your applications (highly recommended).
 
 ### 1. Select the target
 
