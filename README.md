@@ -91,7 +91,9 @@ target_link_libraries(${PROGRAM_NAME} ${OpenCV_LIBS} mini_slam)
 
 ### 2. Launch / Debug
 
-First, download the datasets required for each lab (example [fr1_xyz](https://cvg.cit.tum.de/rgbd/dataset/freiburg1/rgbd_dataset_freiburg1_xyz.tgz)) and place the uncompressed folders inside `Datasets/`. Then, follow the guide [Debug code with Visual Studio Code](https://code.visualstudio.com/docs/debugtest/debugging).
+First, download the datasets required for each lab (example [fr1_xyz](https://cvg.cit.tum.de/rgbd/dataset/freiburg1/rgbd_dataset_freiburg1_xyz.tgz)) and place the uncompressed folders inside `Datasets/`. Then, run the app from VS Code `Run` > `Start Debugging`.
+
+If you are unfamiliar with using VS Code for debugging, take a look at the guide [Debug code with Visual Studio Code](https://code.visualstudio.com/docs/debugtest/debugging#_debugger-user-interface). Skip the video (it is too long) and just read how to start a debug session, set breakpoints, and perform data inspection. 
 
 We already provide two example launch configurations in `.vscode/launch.json`.
 
