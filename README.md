@@ -47,6 +47,12 @@ On macOS, we will use XQuartz:
 
 ### 4. Open folder in VS Code
 
+Clone this repository:
+
+```sh
+git clone https://github.com/universidad-zaragoza/Mini-SLAM.git
+```
+
 Launch VS Code and go to `File` > `Open Folder...`, then select your Mini-SLAM folder.
 
 Click on **Yes, I trust the authors** when prompted.
@@ -85,7 +91,7 @@ target_link_libraries(${PROGRAM_NAME} ${OpenCV_LIBS} mini_slam)
 
 ### 2. Launch / Debug
 
-First, download the datasets required for each lab and place the uncompressed folders inside `Datasets/`. Then, follow the guide  
+First, download the datasets required for each lab (example [fr1_xyz](https://cvg.cit.tum.de/rgbd/dataset/freiburg1/rgbd_dataset_freiburg1_xyz.tgz)) and place the uncompressed folders inside `Datasets/`. Then, follow the guide  
 [Debug code with Visual Studio Code](https://code.visualstudio.com/docs/debugtest/debugging).
 
 We already provide two example launch configurations in `.vscode/launch.json`.
