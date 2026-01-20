@@ -57,4 +57,4 @@ RUN mkdir -p OpenCV && cd OpenCV && \
     sudo cmake --install build
 
 RUN sudo apt-get update && sudo apt install -y --no-install-recommends \
-    gdb
+    gdb git-lfs
