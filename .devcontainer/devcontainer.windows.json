@@ -39,5 +39,5 @@
 		"type=bind,src=\\\\wsl.localhost\\Ubuntu\\tmp\\.X11-unix,dst=/tmp/.X11-unix",
 		"type=bind,src=\\\\wsl.localhost\\Ubuntu\\usr\\lib\\wsl,dst=/usr/lib/wsl"
 	],
-	"runArgs": ["--gpus", "all"]
+	"runArgs": []
 }
