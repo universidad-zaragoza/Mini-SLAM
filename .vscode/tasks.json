@@ -7,7 +7,7 @@
             "type": "shell",
             "command": "[ -e .devcontainer/devcontainer.json ] || cp .devcontainer/devcontainer.$(uname -s | tr '[:upper:]' '[:lower:]').json .devcontainer/devcontainer.json",
             "linux": {"command": "[ -e .devcontainer/devcontainer.json ] || cp .devcontainer/devcontainer.$(uname -s | tr '[:upper:]' '[:lower:]').json .devcontainer/devcontainer.json"},
-            "windows": {"command": "xcopy .devcontainer\\devcontainer.windows.json .devcontainer\\devcontainer.json "},
+            "windows": {"command": "echo F | xcopy /Y .devcontainer\\devcontainer.windows.json .devcontainer\\devcontainer.json"},
             "runOptions": { 
                 "runOn": "folderOpen"
             }
