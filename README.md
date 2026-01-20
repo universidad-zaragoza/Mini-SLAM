@@ -21,21 +21,31 @@ Install [Visual Studio Code](https://code.visualstudio.com/) on your host machin
 
 <details>
 
-<summary>Windows</summary>
+<summary>Windows (using VcXsrv)</summary>
 
-The recommended solution for X11 forwarding on Windows 10 or newer is to use WSL2 (Windows Subsystem for Linux version 2):
+1. Install an X server like [VcXsrv](https://sourceforge.net/projects/vcxsrv/)
+2. Start it with:
+    - Set display number to `:0`;
+    - Uncheck `Native opengl`;
+    - Check `Disable access control`;
 
-1. Open PowerShell as administrator (search for "PowerShell", right-click, and select **Run as administrator**).
-2. Run `wsl --install`.
-3. In Docker Desktop, go to `Settings` > `Resources` > `WSL Integration` and enable it.
 
 </details>
 
 <details>
 
-<summary>macOS</summary>
+<summary>Windows (using WSL2) </summary>
 
-On macOS, we will use XQuartz:
+1. Open PowerShell as administrator (search for "PowerShell", right-click, and select **Run as administrator**).
+2. Run `wsl --install`.
+3. In Docker Desktop, go to `Settings` > `Resources` > `WSL Integration` and enable it.
+4. Replace `.devcontainer/devcontainer.windows.json` by `.devcontainer/devcontainer.wsl2.json` before opening VS Code.
+
+</details>
+
+<details>
+
+<summary>macOS (using XQuartz)</summary>
 
 1. Open a Terminal on your macOS host.
 2. Run `brew install --cask xquartz` (if you do not have Homebrew installed, see instructions [here](https://brew.sh/)).
@@ -59,17 +69,24 @@ Click on **Yes, I trust the authors** when prompted.
 
 ![VSCode Yes, I trust the authors](Misc/vscode-yes-i-trust-the-authors.png)
 
+On start-up, VS Code will copy the corresponding `devcontainer.[windows|linux|darwin].json` to `.devcontainer/devcontainer.json`.
+You might need to do that manually if the automatic copy fails.
+
 ### 5. Install recommended extensions
 
 Click **Install** to add the recommended VS Code extensions.
 
 ![VSCode install recommended extensions](Misc/vscode-install-recommended-extensions.png)
 
+If you do not get this prompt, you may have already installed all the recommended extensions.
+
 ### 6. Reopen the workspace in a Docker container
 
 Click **Reopen in Container**. The first time you do this, it may take up to an hour to set up the container, depending on your machine.
 
 ![VSCode Reopen in Container](Misc/vscode-reopen-in-container.png)
+
+If you do not get this prompt, you can click the bottom-left corner ![Open a Remote Window](Misc/vscode-open-remote-window.png) (Open a Remote Window) and select `Reopen in Container`.
 
 ## Running Mini-SLAM
 
